@@ -18,15 +18,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the experiments.
 
-## Using the Experiments
-
-Each experiment has a `starter` and `solution` version:
-
-- **Starter**: Your starting point to implement the exercise
-- **Solution**: The completed implementation for reference
-
-To switch between versions, edit the experiment's `page.tsx` file and change the import from `starter` to `solution` (or vice versa).
-
 ## Resources
 - https://easings.net/
 - https://gsap.com/docs/v3/
