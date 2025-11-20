@@ -1,0 +1,21 @@
+.letter {
+  display: inline-block;
+  animation: reveal-letter 3s cubic-bezier(0, 0.55, 0.45, 1);
+
+  /* this is to create stagger effect each letter will animate with different delay */
+  animation-delay: calc(var(--index) * 0.03s);
+
+  /* both sprawia, że element "pamięta" styl z początku animacji zanim ona ruszy i "zatrzymuje" styl z końca, gdy ona się skończy. */
+  animation-fill-mode: both;
+}
+
+@keyframes reveal-letter {
+  0% {
+    opacity: 0;
+    transform: translateY(200px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
